@@ -7,7 +7,7 @@ def readdata():
        feeds = feedparser.parse(n)
        print("###### %s ######" % n)
        for feed in feeds.entries:
-           print(feed.title + " " + feed.link + '\n')
+           print(feed.title + " - " + feed.link + '\n')
     promt = input("")
     if promt == '1':
         readdata()
