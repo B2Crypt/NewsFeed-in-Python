@@ -1,7 +1,7 @@
 #  -*- coding: utf-8 -*-
 import feedparser
 import sys
-newsfeeds = ['https://www.reddit.com/r/worldnews/.rss']
+newsfeeds = ['https://www.reddit.com/r/worldnews/.rss','http://feeds.foxnews.com/foxnews/tech','https://www.wired.com/category/gear/feed/','https://www.wired.com/category/security/feed/']
 def readdata():
     for n in newsfeeds:
        feeds = feedparser.parse(n)
@@ -11,7 +11,6 @@ def readdata():
     promt = input("")
     if promt == '1':
         readdata()
-        #Dette er en testmelding!
 
 if __name__ == "__main__":
     readdata()
