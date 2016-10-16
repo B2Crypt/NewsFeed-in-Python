@@ -11,6 +11,7 @@ def readdata():
     promt = input("")
     if promt == '1':
         readdata()
+        #Dette er en testmelding!
 
 if __name__ == "__main__":
     readdata()
