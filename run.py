@@ -1,10 +1,6 @@
 #  -*- coding: utf-8 -*-
-
-
 import feedparser
 import sys
-
-
 newsfeeds = ['https://www.reddit.com/r/worldnews/.rss']
 def readdata():
     for n in newsfeeds:
